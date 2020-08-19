@@ -25,5 +25,5 @@ Here are the classes in the dataset, as well as 10 random images from each:
 * A `convNet_model.pth` file has been included. With this one can directly load the model state_dict and use for testing.
 
 <p align='center'>
-  <img src=''>
+  <img src='https://github.com/NvsYashwanth/CIFAR-10-Image-Classification/blob/master/Images/cifar%20loss%20curve.png'>
 </p>
