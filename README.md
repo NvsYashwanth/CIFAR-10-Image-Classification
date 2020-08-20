@@ -12,6 +12,12 @@ Here are the classes in the dataset, as well as 10 random images from each:
 ## Results
 ***`A validation dataset of size 10,000 was deduced from the Training dataset with its size being changed to 40,000. We train the following models for 50 epochs.`***
 
+### Prarameters Initialization
+* Both models have been initialized with random weights sampled from a normal distribution and bias with 0.
+* These parameters have been intialized only for the Linear layers present in both of the models.
+* If `n` represents number of nodes in a Linear Layer, then weights are given as a sample of normal distribution in the range `(0,y)`. Here `y` represents standard deviation calculated as `y=1.0/sqrt(n)`
+* Normal distribution is chosen since the probability of choosing a set of weights closer to zero in the distribution is more than that of the higher values. Unlike in Uniform distribution where probability of choosing any value is equal.
+
 ***Model - 1 : FFNN***
 * This `Linear Model` uses 3072 nodes at input layer, 2048, 1024, 512, and 256 nodes in the first, second, third and fourth hidden layers respectively, with ouput layer of 10 nodes (10 classes).
 * The test accuracy is ***52.81%*** (***This result uses dropout probability of 25%***)
